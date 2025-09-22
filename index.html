@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine: A Land of History and Resilience</title>
+    <!-- Use Tailwind CSS for rapid, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <!-- Message Box -->
+    <div id="message-box" class="message-box"></div>
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Palestine</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#history" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">History</a>
+                <a href="#culture" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Culture</a>
+                <a href="#media" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Media</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">Contact</a>
+            </nav>
+            <button id="nav-toggle" class="md:hidden text-gray-800 focus:outline-none" aria-label="Toggle navigation menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-[#e4d6c4] py-20 md:py-32 text-center">
+            <div class="container mx-auto px-4">
+                <h2 class="text-5xl md:text-6xl font-extrabold text-[#1a535c] leading-tight">Palestine: A Journey Through Time</h2>
+                <p class="mt-4 text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">Explore the rich history, vibrant culture, and enduring spirit of the Palestinian people. A story of resilience and heritage.</p>
+                <div class="mt-8 flex justify-center">
+                    <a href="#history" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- History Section (Interactive Feature 1: Accordion) -->
+        <section id="history" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="section-title text-3xl font-bold text-center mb-8">History & Identity</h3>
+                <div class="space-y-4 max-w-3xl mx-auto">
+                    <!-- Accordion Item 1 -->
+                    <div class="accordion-item shadow-sm">
+                        <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
+                            <span class="text-xl font-semibold">Ancient Roots</span>
+                            <span class="accordion-icon text-gray-500 transform transition-transform duration-300">+</span>
+                        </div>
+                        <div class="accordion-content p-4 pt-0 hidden">
+                            <p class="text-gray-700">The land of Palestine is steeped in history, home to some of the world's oldest civilizations. Its strategic location at the crossroads of Asia, Africa, and Europe made it a center for trade and a melting pot of cultures. Archaeological findings date human presence back hundreds of thousands of years.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 2 -->
+                    <div class="accordion-item shadow-sm">
+                        <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
+                            <span class="text-xl font-semibold">The Ottoman Era</span>
+                            <span class="accordion-icon text-gray-500 transform transition-transform duration-300">+</span>
+                        </div>
+                        <div class="accordion-content p-4 pt-0 hidden">
+                            <p class="text-gray-700">For over four centuries, from 1516 to 1917, Palestine was part of the Ottoman Empire. During this period, the region was diverse, with a population of Muslims, Christians, and Jews living in a complex and multi-religious society. The period saw a relative stability and a degree of autonomy for local populations.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 3 -->
+                    <div class="accordion-item shadow-sm">
+                        <div class="accordion-header p-4 cursor-pointer flex justify-between items-center">
+                            <span class="text-xl font-semibold">The British Mandate & Beyond</span>
+                            <span class="accordion-icon text-gray-500 transform transition-transform duration-300">+</span>
+                        </div>
+                        <div class="accordion-content p-4 pt-0 hidden">
+                            <p class="text-gray-700">After World War I, the League of Nations granted the United Kingdom a mandate over Palestine. This period saw significant political and demographic changes, leading to rising tensions between Arab and Jewish populations. The events that followed shaped the modern history of the region.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culture & Art Section -->
+        <section id="culture" class="bg-[#f2e7d7] py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="section-title text-3xl font-bold text-center mb-8">Culture & Art</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Culture Card 1: Keffiyeh -->
+                    <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/gettyimages-521485442.jpg?c=16x9" alt="A man wearing a keffiyeh" class="rounded-lg mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">The Keffiyeh</h4>
+                        <p class="text-gray-600">The iconic black and white scarf, a powerful symbol of Palestinian nationalism and identity, worn by people worldwide.</p>
+                    </div>
+                    <!-- Culture Card 2: Cuisine -->
+                    <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+                        <img src="https://images.immediate.co.uk/production/volatile/sites/30/2023/01/Maqlooba-4cd95c3.jpg" alt="A plate of Maqluba" class="rounded-lg mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Palestinian Cuisine</h4>
+                        <p class="text-gray-600">A vibrant and rich culinary tradition with dishes like falafel, hummus, and the famous Maqluba, a delicious upside-down rice and meat dish.</p>
+                    </div>
+                    <!-- Culture Card 3: Embroidery -->
+                    <div class="bg-white p-6 rounded-xl shadow-md flex flex-col items-center text-center">
+                        <img src="https://finecellwork.co.uk/cdn/shop/articles/STITCH_UP_BLOG_aa747dc8-057a-422b-a1f2-0ec1aeebe0b0.png?v=1754325747" alt="Traditional Palestinian embroidery" class="rounded-lg mb-4">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">Tatreez Embroidery</h4>
+                        <p class="text-gray-600">The intricate, colorful patterns of Tatreez tell stories of village life, family, and history, passed down through generations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Media Section (Interactive Feature 2: Image Slider) -->
+        <section id="media" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="section-title text-3xl font-bold text-center mb-8">Scenes of Palestine</h3>
+                <div class="relative max-w-4xl mx-auto rounded-xl overflow-hidden shadow-xl">
+                    <div class="slider-container">
+                        <img src="https://cdn.britannica.com/35/249435-050-26EC17AB/Church-of-Holy-Sepulchre-Jerusalem-Israel.jpg" alt="Jerusalem Old City" class="slider-img active">
+                        <img src="https://c8.alamy.com/comp/2M0Y2AW/store-with-hebron-glass-souvenirs-in-hebron-west-bank-palestine-2M0Y2AW.jpg" alt="Hebron Glassblowing" class="slider-img">
+                        <img src="https://www.dianekochilas.com/wp-content/uploads/2018/11/1149-manual-olive-harvest-selasia.jpg" alt="Olive Harvest" class="slider-img">
+                    </div>
+                    <button id="prev-btn" class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white text-gray-700 p-2 rounded-full shadow-lg opacity-75 hover:opacity-100 transition-opacity duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    </button>
+                    <button id="next-btn" class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white text-gray-700 p-2 rounded-full shadow-lg opacity-75 hover:opacity-100 transition-opacity duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Interactive Feature 3: Custom Form Validation) -->
+        <section id="contact" class="bg-[#e4d6c4] py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h3 class="section-title text-3xl font-bold text-center mb-8">Get In Touch</h3>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="form-input w-full p-3 focus:outline-none focus:ring-2 focus:ring-[#1a535c]" placeholder="Your Name">
+                            <p id="name-error" class="text-sm text-red-500 mt-1 hidden">Please enter your name.</p>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="text" id="email" name="email" class="form-input w-full p-3 focus:outline-none focus:ring-2 focus:ring-[#1a535c]" placeholder="Your Email">
+                            <p id="email-error" class="text-sm text-red-500 mt-1 hidden">Please enter a valid email address.</p>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="form-textarea w-full p-3 focus:outline-none focus:ring-2 focus:ring-[#1a535c]" placeholder="Your Message"></textarea>
+                            <p id="message-error" class="text-sm text-red-500 mt-1 hidden">Please enter your message.</p>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn-primary w-full md:w-auto">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#1a535c] text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Palestine. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+   
+</body>
+</html>

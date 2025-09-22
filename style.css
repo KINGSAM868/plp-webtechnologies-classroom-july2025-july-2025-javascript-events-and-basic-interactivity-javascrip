@@ -1,0 +1,67 @@
+/* style.css */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3e9; /* A light, warm background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-title {
+            color: #1a535c; /* A deep teal */
+        }
+        .accordion-item, .form-input, .form-textarea {
+            border-radius: 0.5rem;
+            border: 1px solid #c7b198; /* A subtle, earthy tone */
+            background-color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+        .accordion-item:hover {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .btn-primary {
+            background-color: #1a535c;
+            color: #fff;
+            border-radius: 9999px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: transform 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .slider-img {
+            display: none;
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            object-fit: cover;
+        }
+        .slider-img.active {
+            display: block;
+        }
+        .message-box {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 1rem 1.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        }
+        .message-box.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .message-box.success {
+            background-color: #4CAF50;
+        }
+        .message-box.error {
+            background-color: #f44336;
+        }
+    
